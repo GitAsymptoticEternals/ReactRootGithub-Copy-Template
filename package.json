@@ -1,0 +1,26 @@
+{
+  "name": "reactrootfolder",
+  "version": "1.0.0",
+  "description": "react parcel react-dom and everything related to react is here",
+  "homepage": "https://github.com/GitAsymptoticEternals/ReactRootGithub#readme",
+  "bugs": {
+    "url": "https://github.com/GitAsymptoticEternals/ReactRootGithub/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GitAsymptoticEternals/ReactRootGithub.git"
+  },
+  "license": "ISC",
+  "author": "Ashish Singh",
+  "type": "commonjs",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "parcel": "^2.16.4"
+  },
+  "dependencies": {
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0"
+  }
+}
