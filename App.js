@@ -1,20 +1,25 @@
-{/* <div id="parent">
-        <div id="child">
-            <h1>I'm h1 tag</h1>
-            <h2>I'm h2 tag</h2>
-        </div>
-    </div>             */}
+import React from "react";
+import ReactDOM from "react-dom/client";
 
-const parent = React.createElement(
-    "div",
-    { id: "parent" },
-    React.createElement("div", { id: "child" },
-        [
-            React.createElement("h1", {}, "I'm h1 tag"),
-            React.createElement("h2", {}, "I'm h2 tag")
-        ]
-    )
-);
+// {}  : We can write Pure JavaScript code inside these curly-brackets.
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(parent);
+const Title=()=>{
+    return (
+        <>
+        <span className="title" tabIndex="5">
+            SpanTitle_
+        </span></>)
+};
+
+const HeadingComponent=()=>{
+    return (<>
+        <h1>One and the same thing in 3 ways to code:</h1>
+        <Title/>
+        <Title></Title>
+        {Title()}
+    </>);
+}
+
+
+const root=ReactDOM.createRoot(document.getElementById("root"));
+root.render(<HeadingComponent/>);
